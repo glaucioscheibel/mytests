@@ -4,10 +4,10 @@ import "fmt"
 
 func bubble(v []int) {
 	changed := true
-	max := len(v) - 1
+	last := len(v) - 1
 	for changed {
 		changed = false
-		for i := 0; i < max; i++ {
+		for i := 0; i < last; i++ {
 			if v[i] > v[i+1] {
 				changed = true
 				aux := v[i]
@@ -15,7 +15,7 @@ func bubble(v []int) {
 				v[i+1] = aux
 			}
 		}
-		max--
+		last--
 	}
 }
 

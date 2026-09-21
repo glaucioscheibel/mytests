@@ -12,9 +12,9 @@ func main() {
         primos[i] = true
     }
 
-	max := int(math.Sqrt(float64(len(primos))))
+	limit := int(math.Sqrt(float64(len(primos))))
 
-	for i := 2; i < max + 1; i++ {
+	for i := 2; i < limit + 1; i++ {
 		if primos[i] {
 			for j := i * i; j < len(primos); j += i {
 				primos[j] = false
