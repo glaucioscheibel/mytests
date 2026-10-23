@@ -11,7 +11,7 @@ func qsort(v []int) []int {
 	}
 	var menor, igual, maior []int
 	pivot := rand.Int() % len(v)
-	for i := 0; i<len(v); i++ {
+	for i := 0; i < len(v); i++ {
 		if v[i] < v[pivot] {
 			menor = append(menor, v[i])
 		} else if v[i] > v[pivot] {

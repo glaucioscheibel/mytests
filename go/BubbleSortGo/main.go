@@ -20,7 +20,7 @@ func bubble(v []int) {
 }
 
 func main() {
-	var v = []int{1, 10, 2, 9, 8, 3, 7, 4, 6, 5}
+	v := []int{1, 10, 2, 9, 8, 3, 7, 4, 6, 5}
 	fmt.Println(v)
 	bubble(v)
 	fmt.Println(v)
