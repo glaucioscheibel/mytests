@@ -8,13 +8,13 @@ import (
 func main() {
 	var primos [1000]bool
 
-	for i := 0; i < 1000; i++ {
-		primos[i] = true
-	}
+    for i := 0; i < 1000; i++ {
+        primos[i] = true
+    }
 
-	max := int(math.Sqrt(float64(len(primos))))
+	limit := int(math.Sqrt(float64(len(primos))))
 
-	for i := 2; i < max+1; i++ {
+	for i := 2; i < limit + 1; i++ {
 		if primos[i] {
 			for j := i * i; j < len(primos); j += i {
 				primos[j] = false
